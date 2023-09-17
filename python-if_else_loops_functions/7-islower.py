@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def islower(c):
     i = ord(c)
     if 97 <= i <= 122:
