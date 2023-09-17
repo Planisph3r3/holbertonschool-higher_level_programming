@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 def uppercase(str):
+    fuli = ""
     for i in str:
         k = (ord(i) - 32)
         l = chr(k)
         if "A" <= i <= "Z" or i == " " or "0" <= i <= "9":
-            print("{:s}".format(i), end = "")
+            fuli += i
         else:
-            print("{:s}".format(l), end = "")
-    print()
+            fuli += l
+    print("{:s}".format(fuli))
