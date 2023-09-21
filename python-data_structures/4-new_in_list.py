@@ -9,7 +9,7 @@ def new_in_list(my_list, idx, element):
         pass
     for i in my_list:
         neww.append(i)
-        if i == idx:
-            neww[idx - 1] = new_element
+        if i == idx + 1:
+            neww[idx] = new_element
 
     return neww
