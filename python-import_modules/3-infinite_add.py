@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 import sys
 
-u = 0
-arg = len(sys.argv)
-
 
 def main():
+    u = 0
+    arg = len(sys.argv)
     for i in range(arg):
         if i == arg:
             break
