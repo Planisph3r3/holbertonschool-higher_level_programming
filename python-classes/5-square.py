@@ -37,7 +37,7 @@ class Square:
     
     def my_print(self):
         """Printing a square with "#" depending the value: size"""
-        if self.size == 0:
-            print()
-        for rows in range(self.size):
-            print("#" * self.size)
+        if self.__size == 0:
+            print("")
+        for rows in range(self.__size):
+            print("#" * self.__size)
