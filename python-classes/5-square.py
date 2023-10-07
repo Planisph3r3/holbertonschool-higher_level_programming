@@ -32,10 +32,11 @@ class Square:
         self.__size = value
 
     def area(self):
-        "Returns the area of the square"
+        """Returns the area of the square"""
         return self.__size**2
     
     def my_print(self):
+        """Printing a square with "#" depending the value: size"""
         if self.size == 0:
             print()
         for rows in range(self.size):
