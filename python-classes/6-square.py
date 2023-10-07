@@ -51,13 +51,13 @@ class Square:
 
     def my_print(self):
         """Printing a square with "#" depending the value: (size) and the value: (position)"""
-        if self.__size == 0:
+        if self.size == 0:
             print("")
-        for i in range(self.__position[1]):
+        for i in range(self.position[1]):
             print("")
-        for rows in range(self.__size):
-            for underscore in range(self.__position[0]):
+        for rows in range(self.size):
+            for underscore in range(self.position[0]):
                 print("_", end = "")
             for hashtag in range(1):
-                print("#" * self.__size)
+                print("#" * self.size)
 
