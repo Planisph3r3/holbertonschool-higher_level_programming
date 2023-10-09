@@ -1,0 +1,40 @@
+# 0-add_integer.py
+>>> add_integer = __import__('0-add_integer').add_integer
+
+def add_integer(a, b=98):
+
+    This function adds two int or float numbers and return the result as a integer.
+		
+    >>> add_integer(2, 3)
+    5
+    
+    >>> add_integer(2.5, 3)
+    5
+    
+    >>> add_integer(2, 3.5)
+    5
+    
+    >>> add_integer("2", 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+    
+    >>> add_integer(2, "3")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    
+    >>> add_integer(2.5, "3.5")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    
+    >>> add_integer(True, 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+    
+    >>> add_integer(2, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
