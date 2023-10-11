@@ -2,7 +2,7 @@
 """Define a Rectangle."""
 
 
-class Square:
+class Rectangle:
     """The Rectangle itself"""
 
     pass
