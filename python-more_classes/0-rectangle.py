@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""Defines a rectange"""
+"""Define a Rectangle."""
 
 
-class Rectangle:
+class Square:
+    """The Rectangle itself"""
+
     pass
