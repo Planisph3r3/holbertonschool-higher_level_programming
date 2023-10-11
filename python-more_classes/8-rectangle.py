@@ -8,6 +8,9 @@ class Rectangle:
     print_symbol = "#"
 
     def bigger_or_equal(rect_1, rect_2):
+        """Returns which instance of the Rectangle is bigger, taking
+        the area of both as comparison.
+        if there are equal returns the first instance"""
         rect_1_area = rect_1.width * rect_1.height
         rect_2_area = rect_2.width * rect_2.height
         if not isinstance(rect_1, Rectangle):
@@ -16,9 +19,9 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
         if rect_1_area == rect_2_area:
             return rect_1
-        elif rect_1_area > rect_2_area:
+        if rect_1_area > rect_2_area:
             return rect_1
-        else:
+        if rect_1_area < rect_2_area:
             return rect_2
 
     def __init__(self, width=0, height=0):
