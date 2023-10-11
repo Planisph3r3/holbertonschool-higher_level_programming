@@ -62,10 +62,7 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return("")
         for i in range(self.__height):
-            if isinstance(self.print_symbol, list):
-                str_store += (str(self.print_symbol) * self.__width)
-            else:
-                str_store += (Rectangle.print_symbol * self.__width)
+            str_store += (str(self.print_symbol) * self.__width)
             if i < self.__height - 1:
                 str_store += '\n'
         return str_store
