@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Define a module for checking objects"""
+
+
 def is_same_class(obj, a_class):
     """Returns True or False depending if obj is exactly
     the same instance
