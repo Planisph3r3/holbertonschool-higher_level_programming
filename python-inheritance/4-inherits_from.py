@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Define a module for checking the instance of an object that inherited directly from the specified class"""
+"""Define a module for checking the instance of an object that
+inherited directly from the specified class"""
 
 
 def inherits_from(obj, a_class):
