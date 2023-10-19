@@ -1,0 +1,57 @@
+# 1-my_list.txT
+
+This module is for making sure the correct and expected results are in place
+-----------------------------------------------------------------------------------------
+
+def integer_validator(self, name, value):
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("my_int", 12)
+    
+    
+    # ::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator(2, 3)
+    
+
+    # ::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    # ::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator(2)
+    Traceback (most recent call last):
+        ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+    # ::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator(None, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+    # ::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("N", 1.788)
+    Traceback (most recent call last):
+	...
+    TypeError: N must be an integer
+
+    # ::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator(2, 1.788)
+    Traceback (most recent call last):
+      ...
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+    #::
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("Na", 0/0)
+    Traceback (most recent call last):
+	...
+    ZeroDivisionError: division by zero
