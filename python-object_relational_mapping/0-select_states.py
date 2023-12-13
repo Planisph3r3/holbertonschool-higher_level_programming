@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-""" Fetching/Getting all states using MySQLdb"""
+"""Fetching/Getting all states using MySQLdb"""
 import MySQLdb
 import sys
 
 
 def main():
-    """Connects to a MySQL database and excecute a select query then print the result. It uses arguments sent by the user on prompt"""
+    """Connects to a MySQL database and excecute a select
+    query then print the result.
+    It uses arguments sent by the user on prompt"""
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
