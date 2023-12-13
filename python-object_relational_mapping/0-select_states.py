@@ -10,9 +10,8 @@ def main():
         host="localhost",
         port=3306,
         user=sys.argv[1],
-        password=sys.argv[2],
-        db=sys.argv[3],
-        charset="utf-8",
+        passwd=sys.argv[2],
+        db=sys.argv[3]
     )
 
     cur = db.cursor()
@@ -22,7 +21,7 @@ def main():
     rows = cur.fetchall()
 
     for row in rows:
-        print(tuple(row))
+        print(row)
 
     cur.close()
     db.close()
