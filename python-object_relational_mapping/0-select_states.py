@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Este módulo de prueba sirve para conectar
-con MySQL
+con MySQL.
 """
 
 
