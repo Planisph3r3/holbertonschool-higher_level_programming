@@ -22,15 +22,14 @@ def main():
         port=3306,
         database=sys.argv[3],
     )
-
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
-    rows = cur.fetchall()
+    r = db.cursor()
+    r.execute("SELECT * FROM states ORDER BY id ASC")
+    rows = r.fetchall()
 
     for row in rows:
         print(row)
 
-    cur.close()
+    r.close()
     db.close()
 
 
