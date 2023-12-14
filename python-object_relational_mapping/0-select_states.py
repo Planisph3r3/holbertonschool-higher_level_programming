@@ -1,13 +1,20 @@
 #!/usr/bin/python3
-"""Fetching/Getting all states using MySQLdb"""
+"""
+Fetching/Getting all states using MySQLdb
+"""
+
+
 import MySQLdb
 import sys
 
 
 def main():
-    """Connects to a MySQL database and excecute a select
+    """
+    Connects to a MySQL database and excecute a select
     query then print the result.
-    It uses arguments sent by the user on prompt"""
+    It uses arguments sent by the user on prompt
+    """
+
     db = MySQLdb.connect(
         host="localhost",
         user=sys.argv[1],
@@ -28,5 +35,7 @@ def main():
 
 
 if __name__ == "__main__":
-    """ Execution Guardian """
+    """
+    Execution Guardian
+    """
     main()
