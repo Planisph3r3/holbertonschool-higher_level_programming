@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Fetching/Getting all states using MySQLdb
+Este módulo de prueba sirve para conectar
+con MySQL
 """
 
 
@@ -10,9 +11,8 @@ import sys
 
 def main():
     """
-    Connects to a MySQL database and excecute a select
-    query then print the result.
-    It uses arguments sent by the user on prompt
+    Esta función hace la consulta de la
+    tabla states en hbtn_0e_0_usa.
     """
 
     db = MySQLdb.connect(
@@ -35,6 +35,7 @@ def main():
 
 if __name__ == "__main__":
     """
-    Execution Guardian
+    Esta validación evita que se ejecute
+    este archivo.
     """
     main()
